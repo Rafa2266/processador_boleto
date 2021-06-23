@@ -26,7 +26,16 @@ public class Fatura {
 	}
 	public String faturaEst·Paga(ArrayList<FormaPagamento> FormasDePagamento) {
 		ArrayList<Pagamento> pagamentos=convertToPagamentos(FormasDePagamento);
-		return "incompleto";
+		int soma=0;
+		for(Pagamento p:pagamentos){
+			soma+=p.getValor();
+		}
+		if(soma==valorTotal) {
+		    return "foi pago";
+		}else {
+			return "incompleto";
+		}
+		
 	}
 
 }

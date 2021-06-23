@@ -12,4 +12,7 @@ public class Pagamento {
 		this.valor=valor;
 		this.tipo=tipo;
 	    }
+	public double getValor() {
+		return this.valor;
+	}
 }
