@@ -33,7 +33,7 @@ public class Fatura {
 		if(soma>=valorTotal) {
 		    return "foi pago";
 		}else {
-			return "incompleto";
+			return "não foi pago";
 		}
 		
 	}
