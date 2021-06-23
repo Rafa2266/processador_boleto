@@ -38,5 +38,14 @@ public class TestPagarFatura {
 			fps.add(boleto3);
 			Assertions.assertEquals("foi pago",fatura.faturaEst·Paga(fps));
 	}
+	@DisplayName("Testa se a fatura È paga quando È recebido boletos que representam um valor maior")
+	@Test
+	public void testPagamentoValorAcima() {
+			fps.add(boleto1);
+			fps.add(boleto2);
+			fps.add(boleto3);
+			fps.add(boleto4);
+			Assertions.assertEquals("foi pago",fatura.faturaEst·Paga(fps));
+	}
 
 }
