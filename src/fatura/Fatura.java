@@ -30,7 +30,7 @@ public class Fatura {
 		for(Pagamento p:pagamentos){
 			soma+=p.getValor();
 		}
-		if(soma==valorTotal) {
+		if(soma>=valorTotal) {
 		    return "foi pago";
 		}else {
 			return "incompleto";
